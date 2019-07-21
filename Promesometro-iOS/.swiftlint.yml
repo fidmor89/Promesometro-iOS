@@ -1,0 +1,85 @@
+# Rule Documentation: https://github.com/realm/SwiftLint/blob/master/Rules.md
+
+
+# disabled_rules: # rule identifiers to exclude from running
+opt_in_rules: # some rules are only opt-in
+  - anyobject_protocol
+  - array_init
+  - attributes
+  - closure_end_indentation
+  - closure_spacing
+  - collection_alignment
+  - contains_over_first_not_nil
+  - convenience_type
+  - discouraged_optional_boolean
+  - discouraged_optional_collection
+  - empty_count
+  - empty_string
+  # - empty_xctest_method
+  - explicit_init
+  - extension_access_modifier
+  - fallthrough
+  - fatal_error_message
+  # - file_header
+  - file_name
+  - first_where
+  - force_unwrapping
+  - for_where
+  - identical_operands
+  - joined_default_parameter
+  - let_var_whitespace
+  - literal_expression_end_indentation
+  - lower_acl_than_parent
+  - nimble_operator
+  - number_separator
+  - object_literal
+  - operator_usage_whitespace
+  - overridden_super_call
+  # - override_in_extension
+  - pattern_matching_keywords
+  - private_action
+  - private_outlet
+  # private_over_fileprivate
+  # - prohibited_interface_builder
+  - prohibited_super_call
+  - quick_discouraged_call
+  - quick_discouraged_focused_test
+  - quick_discouraged_pending_test
+  - redundant_nil_coalescing
+  - redundant_type_annotation
+  - single_test_class
+  - sorted_first_last
+  - sorted_imports
+  # - static_operator
+  - toggle_bool
+  - unavailable_function
+  - unused_import
+  - unneeded_parentheses_in_closure_argument
+  - untyped_error_in_catch
+  - vertical_parameter_alignment_on_call
+  - yoda_condition
+# included: # paths to include during linting. `--path` is ignored if present.
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+  - "TaskEasyContractor/Supporting Files/Helpers/TaskEasyColors.swift"
+# Can also exclude something like: 
+  # - Source/ExcludedFolder
+  # - Source/ExcludedFile.swift
+  # - Source/*/ExcludedFile.swift # Exclude files with a wildcard
+file_length:
+  warning: 500
+  error: 1200
+type_name:
+  min_length: 3 # only warning
+  max_length: # warning and error
+    warning: 40
+    error: 50
+  excluded:
+    - UI
+identifier_name:
+  min_length: # only min_length
+    error: 3 # only error
+  excluded: # excluded via string array
+    - id 
+    - to
+reporter: "xcode" 
