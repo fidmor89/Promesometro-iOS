@@ -16,6 +16,6 @@ struct PromiseTableViewModel {
         "Promise 2",
         "Promise 3",
         "Promise 4",
-        "Promise 5",
+        "Promise 5"
     ]
 }

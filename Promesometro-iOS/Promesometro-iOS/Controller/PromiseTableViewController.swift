@@ -15,7 +15,7 @@ class PromiseTableViewController: UITableViewController {
     // MARK: - Dependencies
 
     var viewModel = PromiseTableViewModel()
-    
+
     // MARK: - View Lifecycle
 
     override func viewDidLoad() {
@@ -29,7 +29,6 @@ class PromiseTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.promises.count
     }
-
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)

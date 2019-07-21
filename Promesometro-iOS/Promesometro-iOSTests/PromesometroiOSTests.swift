@@ -1,15 +1,15 @@
 //
-//  Promesometro_iOSTests.swift
+//  PromesometroiOSTests.swift
 //  Promesometro-iOSTests
 //
 //  Created by Fidel Esteban Morales Cifuentes on 7/21/19.
 //  Copyright © 2019 Fidmor.89. All rights reserved.
 //
 
-import XCTest
 @testable import Promesometro_iOS
+import XCTest
 
-class Promesometro_iOSTests: XCTestCase {
+class PromesometroiOSTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
