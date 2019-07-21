@@ -45,6 +45,7 @@
 		BAD5A84622E4F3C50071B0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAD5A85422E4FAD10071B0E2 /* PromiseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseTableViewController.swift; sourceTree = "<group>"; };
 		BAD5A85622E4FE750071B0E2 /* PromiseTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PromiseTableViewModel.swift; path = "Promesometro-iOS/Controller/PromiseTableViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		BAD5A85B22E5023D0071B0E2 /* SwiftLint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = SwiftLint.sh; sourceTree = "<group>"; };
 		BBC6282ED5E7EB82A045D85B /* Pods-Promesometro-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Promesometro-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Promesometro-iOS/Pods-Promesometro-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +83,7 @@
 		BAD5A82122E4F3C40071B0E2 = {
 			isa = PBXGroup;
 			children = (
+				BAD5A85A22E502300071B0E2 /* Build-Phases */,
 				BAD5A82C22E4F3C40071B0E2 /* Promesometro-iOS */,
 				BAD5A84322E4F3C50071B0E2 /* Promesometro-iOSTests */,
 				BAD5A82B22E4F3C40071B0E2 /* Products */,
@@ -162,6 +164,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		BAD5A85A22E502300071B0E2 /* Build-Phases */ = {
+			isa = PBXGroup;
+			children = (
+				BAD5A85B22E5023D0071B0E2 /* SwiftLint.sh */,
+			);
+			path = "Build-Phases";
+			sourceTree = "<group>";
+		};
 		E94F0353A55871F12EED5FA9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +192,7 @@
 				BAD5A82622E4F3C40071B0E2 /* Sources */,
 				BAD5A82722E4F3C40071B0E2 /* Frameworks */,
 				BAD5A82822E4F3C40071B0E2 /* Resources */,
+				BAD5A85C22E502920071B0E2 /* Run Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -291,6 +302,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		BAD5A85C22E502920071B0E2 /* Run Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Swiftlint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Run swiftlint\"\n$SRCROOT/Build-Phases/SwiftLint.sh\n";
 		};
 		E0F775036EAE588D73D13DEA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
