@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		152715B799685A4B857C6CF9 /* Pods_Promesometro_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401A71C6B39281920C79C16D /* Pods_Promesometro_iOS.framework */; };
+		B81197144EB3233D00139675 /* Pods_Promesometro_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48AE133D4D105FF990E6EB9D /* Pods_Promesometro_iOSTests.framework */; };
 		BAD5A82E22E4F3C40071B0E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD5A82D22E4F3C40071B0E2 /* AppDelegate.swift */; };
 		BAD5A83022E4F3C40071B0E2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD5A82F22E4F3C40071B0E2 /* FirstViewController.swift */; };
 		BAD5A83222E4F3C40071B0E2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD5A83122E4F3C40071B0E2 /* SecondViewController.swift */; };
@@ -27,6 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D9EEFF051DCA57A087BC8DB /* Pods-Promesometro-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Promesometro-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Promesometro-iOSTests/Pods-Promesometro-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		3D310509309A38928929BED1 /* Pods-Promesometro-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Promesometro-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Promesometro-iOSTests/Pods-Promesometro-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		401A71C6B39281920C79C16D /* Pods_Promesometro_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Promesometro_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48AE133D4D105FF990E6EB9D /* Pods_Promesometro_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Promesometro_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E5C210147C6DEB15FA259D5 /* Pods-Promesometro-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Promesometro-iOS.release.xcconfig"; path = "Target Support Files/Pods-Promesometro-iOS/Pods-Promesometro-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		BAD5A82A22E4F3C40071B0E2 /* Promesometro-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Promesometro-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD5A82D22E4F3C40071B0E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAD5A82F22E4F3C40071B0E2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +45,7 @@
 		BAD5A84022E4F3C50071B0E2 /* Promesometro-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Promesometro-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD5A84422E4F3C50071B0E2 /* Promesometro_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promesometro_iOSTests.swift; sourceTree = "<group>"; };
 		BAD5A84622E4F3C50071B0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBC6282ED5E7EB82A045D85B /* Pods-Promesometro-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Promesometro-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Promesometro-iOS/Pods-Promesometro-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152715B799685A4B857C6CF9 /* Pods_Promesometro_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +61,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B81197144EB3233D00139675 /* Pods_Promesometro_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0071A9CE951EFB90EC6A324F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBC6282ED5E7EB82A045D85B /* Pods-Promesometro-iOS.debug.xcconfig */,
+				8E5C210147C6DEB15FA259D5 /* Pods-Promesometro-iOS.release.xcconfig */,
+				3D310509309A38928929BED1 /* Pods-Promesometro-iOSTests.debug.xcconfig */,
+				2D9EEFF051DCA57A087BC8DB /* Pods-Promesometro-iOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BAD5A82122E4F3C40071B0E2 = {
 			isa = PBXGroup;
 			children = (
 				BAD5A82C22E4F3C40071B0E2 /* Promesometro-iOS */,
 				BAD5A84322E4F3C50071B0E2 /* Promesometro-iOSTests */,
 				BAD5A82B22E4F3C40071B0E2 /* Products */,
+				0071A9CE951EFB90EC6A324F /* Pods */,
+				E94F0353A55871F12EED5FA9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +163,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		E94F0353A55871F12EED5FA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				401A71C6B39281920C79C16D /* Pods_Promesometro_iOS.framework */,
+				48AE133D4D105FF990E6EB9D /* Pods_Promesometro_iOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +179,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAD5A84922E4F3C50071B0E2 /* Build configuration list for PBXNativeTarget "Promesometro-iOS" */;
 			buildPhases = (
+				E0F775036EAE588D73D13DEA /* [CP] Check Pods Manifest.lock */,
 				BAD5A82622E4F3C40071B0E2 /* Sources */,
 				BAD5A82722E4F3C40071B0E2 /* Frameworks */,
 				BAD5A82822E4F3C40071B0E2 /* Resources */,
@@ -163,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAD5A84C22E4F3C50071B0E2 /* Build configuration list for PBXNativeTarget "Promesometro-iOSTests" */;
 			buildPhases = (
+				6FDD94476CBEB4BDD261C673 /* [CP] Check Pods Manifest.lock */,
 				BAD5A83C22E4F3C50071B0E2 /* Sources */,
 				BAD5A83D22E4F3C50071B0E2 /* Frameworks */,
 				BAD5A83E22E4F3C50071B0E2 /* Resources */,
@@ -234,6 +269,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6FDD94476CBEB4BDD261C673 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Promesometro-iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0F775036EAE588D73D13DEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Promesometro-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BAD5A82622E4F3C40071B0E2 /* Sources */ = {
@@ -402,6 +484,7 @@
 		};
 		BAD5A84A22E4F3C50071B0E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBC6282ED5E7EB82A045D85B /* Pods-Promesometro-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -420,6 +503,7 @@
 		};
 		BAD5A84B22E4F3C50071B0E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E5C210147C6DEB15FA259D5 /* Pods-Promesometro-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +522,7 @@
 		};
 		BAD5A84D22E4F3C50071B0E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D310509309A38928929BED1 /* Pods-Promesometro-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -459,6 +544,7 @@
 		};
 		BAD5A84E22E4F3C50071B0E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D9EEFF051DCA57A087BC8DB /* Pods-Promesometro-iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
