@@ -4,15 +4,21 @@ inhibit_all_warnings!
 
 def project_pods
   pod 'SwiftLint'
-  pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git', :branch => 'alamofire5'
+end
 
+def web_service_pods
+  pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git', :branch => 'alamofire5'
 end
 
 target 'Promesometro-iOS' do
   project_pods
 
-  target 'Promesometro-iOSTests' do
-    inherit! :search_paths
-    project_pods
-  end
+#  target 'Promesometro-iOSTests' do
+#    inherit! :search_paths
+#    project_pods
+#  end
+end
+
+target 'PromesometroService' do
+  web_service_pods
 end
