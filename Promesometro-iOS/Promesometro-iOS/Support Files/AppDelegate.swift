@@ -6,6 +6,7 @@
 //  Copyright © 2019 Fidmor.89. All rights reserved.
 //
 
+import PromesometroService
 import UIKit
 
 @UIApplicationMain
@@ -16,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // swiftlint:disable:previous discouraged_optional_collection
+
+        // TODO: Read from configuration.
+        guard let url = URL(string: "https://www.google.com/") else { fatalError("Missing URL") }
+        webService = PromesometroService(withURL: url)
         return true
     }
 
