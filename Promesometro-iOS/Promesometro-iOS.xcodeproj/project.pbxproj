@@ -79,13 +79,12 @@
 		BAD5A82C22E4F3C40071B0E2 /* Promesometro-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				BAD5A82D22E4F3C40071B0E2 /* AppDelegate.swift */,
-				BAD5A82F22E4F3C40071B0E2 /* FirstViewController.swift */,
-				BAD5A83122E4F3C40071B0E2 /* SecondViewController.swift */,
-				BAD5A83322E4F3C40071B0E2 /* Main.storyboard */,
 				BAD5A83622E4F3C50071B0E2 /* Assets.xcassets */,
-				BAD5A83822E4F3C50071B0E2 /* LaunchScreen.storyboard */,
-				BAD5A83B22E4F3C50071B0E2 /* Info.plist */,
+				BAD5A85022E4F4D00071B0E2 /* Model */,
+				BAD5A84F22E4F4C20071B0E2 /* Controller */,
+				BAD5A85322E4F51B0071B0E2 /* ViewModel */,
+				BAD5A85122E4F4D60071B0E2 /* View */,
+				BAD5A85222E4F5090071B0E2 /* Support Files */,
 			);
 			path = "Promesometro-iOS";
 			sourceTree = "<group>";
@@ -97,6 +96,47 @@
 				BAD5A84622E4F3C50071B0E2 /* Info.plist */,
 			);
 			path = "Promesometro-iOSTests";
+			sourceTree = "<group>";
+		};
+		BAD5A84F22E4F4C20071B0E2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BAD5A82F22E4F3C40071B0E2 /* FirstViewController.swift */,
+				BAD5A83122E4F3C40071B0E2 /* SecondViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BAD5A85022E4F4D00071B0E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BAD5A85122E4F4D60071B0E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BAD5A83822E4F3C50071B0E2 /* LaunchScreen.storyboard */,
+				BAD5A83322E4F3C40071B0E2 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BAD5A85222E4F5090071B0E2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAD5A82D22E4F3C40071B0E2 /* AppDelegate.swift */,
+				BAD5A83B22E4F3C50071B0E2 /* Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		BAD5A85322E4F51B0071B0E2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
