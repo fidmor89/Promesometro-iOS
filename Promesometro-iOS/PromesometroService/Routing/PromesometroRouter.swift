@@ -9,6 +9,8 @@
 import Alamofire
 import Foundation
 
+internal var baseURL: URL?
+
 internal enum PromesometroRouter: Router {
 
     // TODO: Define the correct routes
@@ -47,8 +49,7 @@ internal enum PromesometroRouter: Router {
     }
 
     func asURLRequest() throws -> URLRequest {
-        // TODO: Read from configuration file.
-        guard let url = URL(string: "https://www.google.com/") else {
+        guard let url = baseURL else {
             throw AFError.parameterEncodingFailed(reason: .missingURL)
         }
         var urlRequest = URLRequest(url: url.appendingPathComponent(path))

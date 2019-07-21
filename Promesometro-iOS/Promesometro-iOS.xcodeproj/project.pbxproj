@@ -23,6 +23,8 @@
 		BAD5A8A322E514470071B0E2 /* PromesometroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD5A8A222E514470071B0E2 /* PromesometroService.swift */; };
 		BAD5A8A522E514780071B0E2 /* Encodable+asDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD5A8A422E514780071B0E2 /* Encodable+asDictionary.swift */; };
 		BAD5A8A722E514A50071B0E2 /* Encodable+asDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD5A8A422E514780071B0E2 /* Encodable+asDictionary.swift */; };
+		BAD5A8A922E51A5E0071B0E2 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD5A8A822E51A5E0071B0E2 /* Dependencies.swift */; };
+		BAD5A8AD22E51C350071B0E2 /* PromesometroWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD5A8AC22E51C350071B0E2 /* PromesometroWebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		BAD5A8A022E511300071B0E2 /* PromesometroRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromesometroRouter.swift; sourceTree = "<group>"; };
 		BAD5A8A222E514470071B0E2 /* PromesometroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromesometroService.swift; sourceTree = "<group>"; };
 		BAD5A8A422E514780071B0E2 /* Encodable+asDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+asDictionary.swift"; sourceTree = "<group>"; };
+		BAD5A8A822E51A5E0071B0E2 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		BAD5A8AC22E51C350071B0E2 /* PromesometroWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromesometroWebService.swift; sourceTree = "<group>"; };
 		BBC6282ED5E7EB82A045D85B /* Pods-Promesometro-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Promesometro-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Promesometro-iOS/Pods-Promesometro-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C7325176AA9D428954B0194A /* Pods_PromesometroService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PromesometroService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D57FFC6B26F41F64C91F1B /* Pods-PromesometroService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PromesometroService.debug.xcconfig"; path = "Target Support Files/Pods-PromesometroService/Pods-PromesometroService.debug.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +184,7 @@
 			children = (
 				BAD5A82D22E4F3C40071B0E2 /* AppDelegate.swift */,
 				BAD5A83B22E4F3C50071B0E2 /* Info.plist */,
+				BAD5A8A822E51A5E0071B0E2 /* Dependencies.swift */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -203,11 +208,10 @@
 		BAD5A86622E50AE30071B0E2 /* PromesometroService */ = {
 			isa = PBXGroup;
 			children = (
+				BAD5A8AA22E51BF70071B0E2 /* Service */,
+				BAD5A8AB22E51C070071B0E2 /* Routing */,
 				BAD5A86722E50AE30071B0E2 /* PromesometroService.h */,
 				BAD5A86822E50AE30071B0E2 /* Info.plist */,
-				BAD5A88322E50B260071B0E2 /* Router.swift */,
-				BAD5A8A022E511300071B0E2 /* PromesometroRouter.swift */,
-				BAD5A8A222E514470071B0E2 /* PromesometroService.swift */,
 			);
 			path = PromesometroService;
 			sourceTree = "<group>";
@@ -218,6 +222,24 @@
 				BAD5A8A422E514780071B0E2 /* Encodable+asDictionary.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BAD5A8AA22E51BF70071B0E2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BAD5A8A222E514470071B0E2 /* PromesometroService.swift */,
+				BAD5A8AC22E51C350071B0E2 /* PromesometroWebService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BAD5A8AB22E51C070071B0E2 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				BAD5A8A022E511300071B0E2 /* PromesometroRouter.swift */,
+				BAD5A88322E50B260071B0E2 /* Router.swift */,
+			);
+			path = Routing;
 			sourceTree = "<group>";
 		};
 		E94F0353A55871F12EED5FA9 /* Frameworks */ = {
@@ -434,6 +456,7 @@
 				BAD5A85522E4FAD10071B0E2 /* PromiseTableViewController.swift in Sources */,
 				BAD5A8A722E514A50071B0E2 /* Encodable+asDictionary.swift in Sources */,
 				BAD5A85722E4FE750071B0E2 /* PromiseTableViewModel.swift in Sources */,
+				BAD5A8A922E51A5E0071B0E2 /* Dependencies.swift in Sources */,
 				BAD5A82E22E4F3C40071B0E2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +468,7 @@
 				BAD5A8A122E511300071B0E2 /* PromesometroRouter.swift in Sources */,
 				BAD5A8A522E514780071B0E2 /* Encodable+asDictionary.swift in Sources */,
 				BAD5A8A322E514470071B0E2 /* PromesometroService.swift in Sources */,
+				BAD5A8AD22E51C350071B0E2 /* PromesometroWebService.swift in Sources */,
 				BAD5A88422E50B260071B0E2 /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
