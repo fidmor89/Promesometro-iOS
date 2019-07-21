@@ -2,15 +2,17 @@ platform :ios, '12.0'
 use_frameworks!
 inhibit_all_warnings!
 
-def architectural_pods
+def project_pods
   pod 'SwiftLint'
+  pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git', :branch => 'alamofire5'
+
 end
 
 target 'Promesometro-iOS' do
-  architectural_pods
+  project_pods
 
   target 'Promesometro-iOSTests' do
     inherit! :search_paths
-    architectural_pods
+    project_pods
   end
 end

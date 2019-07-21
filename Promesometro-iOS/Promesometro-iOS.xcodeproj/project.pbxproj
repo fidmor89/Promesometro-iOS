@@ -193,6 +193,7 @@
 				BAD5A82722E4F3C40071B0E2 /* Frameworks */,
 				BAD5A82822E4F3C40071B0E2 /* Resources */,
 				BAD5A85C22E502920071B0E2 /* Run Swiftlint */,
+				684CC104677B654EA0F7CE4C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,6 +212,7 @@
 				BAD5A83C22E4F3C50071B0E2 /* Sources */,
 				BAD5A83D22E4F3C50071B0E2 /* Frameworks */,
 				BAD5A83E22E4F3C50071B0E2 /* Resources */,
+				D5C62F46CAB1DB4D43E6A71C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,6 +283,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		684CC104677B654EA0F7CE4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Promesometro-iOS/Pods-Promesometro-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Promesometro-iOS/Pods-Promesometro-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Promesometro-iOS/Pods-Promesometro-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6FDD94476CBEB4BDD261C673 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -320,6 +339,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "echo \"Run swiftlint\"\n$SRCROOT/Build-Phases/SwiftLint.sh\n";
+		};
+		D5C62F46CAB1DB4D43E6A71C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Promesometro-iOSTests/Pods-Promesometro-iOSTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Promesometro-iOSTests/Pods-Promesometro-iOSTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Promesometro-iOSTests/Pods-Promesometro-iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		E0F775036EAE588D73D13DEA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
