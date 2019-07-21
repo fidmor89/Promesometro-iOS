@@ -10,12 +10,12 @@
 		152715B799685A4B857C6CF9 /* Pods_Promesometro_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 401A71C6B39281920C79C16D /* Pods_Promesometro_iOS.framework */; };
 		B81197144EB3233D00139675 /* Pods_Promesometro_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48AE133D4D105FF990E6EB9D /* Pods_Promesometro_iOSTests.framework */; };
 		BAD5A82E22E4F3C40071B0E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD5A82D22E4F3C40071B0E2 /* AppDelegate.swift */; };
-		BAD5A83522E4F3C40071B0E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD5A83322E4F3C40071B0E2 /* Main.storyboard */; };
 		BAD5A83722E4F3C50071B0E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD5A83622E4F3C50071B0E2 /* Assets.xcassets */; };
 		BAD5A83A22E4F3C50071B0E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD5A83822E4F3C50071B0E2 /* LaunchScreen.storyboard */; };
 		BAD5A84522E4F3C50071B0E2 /* PromesometroiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD5A84422E4F3C50071B0E2 /* PromesometroiOSTests.swift */; };
 		BAD5A85522E4FAD10071B0E2 /* PromiseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD5A85422E4FAD10071B0E2 /* PromiseTableViewController.swift */; };
 		BAD5A85722E4FE750071B0E2 /* PromiseTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD5A85622E4FE750071B0E2 /* PromiseTableViewModel.swift */; };
+		BAD5A85E22E505FA0071B0E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD5A85D22E505FA0071B0E2 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 		8E5C210147C6DEB15FA259D5 /* Pods-Promesometro-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Promesometro-iOS.release.xcconfig"; path = "Target Support Files/Pods-Promesometro-iOS/Pods-Promesometro-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		BAD5A82A22E4F3C40071B0E2 /* Promesometro-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Promesometro-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD5A82D22E4F3C40071B0E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BAD5A83422E4F3C40071B0E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BAD5A83622E4F3C50071B0E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAD5A83922E4F3C50071B0E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAD5A83B22E4F3C50071B0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,8 +43,9 @@
 		BAD5A84422E4F3C50071B0E2 /* PromesometroiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromesometroiOSTests.swift; sourceTree = "<group>"; };
 		BAD5A84622E4F3C50071B0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAD5A85422E4FAD10071B0E2 /* PromiseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseTableViewController.swift; sourceTree = "<group>"; };
-		BAD5A85622E4FE750071B0E2 /* PromiseTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PromiseTableViewModel.swift; path = "Promesometro-iOS/Controller/PromiseTableViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		BAD5A85622E4FE750071B0E2 /* PromiseTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PromiseTableViewModel.swift; path = "Promesometro-iOS/ViewModel/PromiseTableViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		BAD5A85B22E5023D0071B0E2 /* SwiftLint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = SwiftLint.sh; sourceTree = "<group>"; };
+		BAD5A85D22E505FA0071B0E2 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BBC6282ED5E7EB82A045D85B /* Pods-Promesometro-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Promesometro-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Promesometro-iOS/Pods-Promesometro-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				BAD5A83822E4F3C50071B0E2 /* LaunchScreen.storyboard */,
-				BAD5A83322E4F3C40071B0E2 /* Main.storyboard */,
+				BAD5A85D22E505FA0071B0E2 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -267,7 +267,7 @@
 			files = (
 				BAD5A83A22E4F3C50071B0E2 /* LaunchScreen.storyboard in Resources */,
 				BAD5A83722E4F3C50071B0E2 /* Assets.xcassets in Resources */,
-				BAD5A83522E4F3C40071B0E2 /* Main.storyboard in Resources */,
+				BAD5A85E22E505FA0071B0E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,14 +375,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BAD5A83322E4F3C40071B0E2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BAD5A83422E4F3C40071B0E2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BAD5A83822E4F3C50071B0E2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
