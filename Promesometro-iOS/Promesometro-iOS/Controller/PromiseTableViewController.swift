@@ -52,7 +52,7 @@ extension PromiseTableViewController {
         self.title = "Promesas"
 
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationController?.navigationItem.largeTitleDisplayMode = .always
+        self.navigationController?.navigationItem.largeTitleDisplayMode = .never
     }
 
     private func setupTableView() {
