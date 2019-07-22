@@ -6,6 +6,7 @@
 //  Copyright © 2019 Fidmor.89. All rights reserved.
 //
 
+import RxSwift
 import UIKit
 
 let cellIdentifier = "PromiseCell"
@@ -16,12 +17,17 @@ class PromiseTableViewController: UITableViewController {
 
     var viewModel = PromiseTableViewModel()
 
+    // MARK: - Properties
+
+    private let disposeBag = DisposeBag()
+
     // MARK: - View Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationController()
         setupTableView()
+        setupRx()
     }
 
     // MARK: - Table view data source
@@ -35,7 +41,7 @@ class PromiseTableViewController: UITableViewController {
 
         // Configure the cell...
         let promise = viewModel.promises[indexPath.row]
-        cell.textLabel?.text = promise
+        cell.textLabel?.text = promise.promise
         return cell
     }
 }
@@ -52,5 +58,12 @@ extension PromiseTableViewController {
     private func setupTableView() {
         // Register cell.
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+    }
+
+    private func setupRx() {
+        viewModel
+            .getPromises()
+            .bind (onNext: { [weak self] _ in self?.tableView.reloadData() })
+            .disposed(by: disposeBag)
     }
 }

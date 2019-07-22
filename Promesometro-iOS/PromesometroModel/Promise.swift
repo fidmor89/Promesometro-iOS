@@ -12,15 +12,15 @@ public typealias Promises = [Promise]
 
 // MARK: - Promise
 public struct Promise: Codable {
-    let promiseID: Int?
-    let promise: String?
-    let candidateID: Int?
-    let name, party: String?
-    let partyID: Int?
-    let position: String?
-    let positionID: Int?
-    let picURL: String?
-    let shortName: String?
+   public let promiseID: Int?
+   public let promise: String?
+   public let candidateID: Int?
+   public let name, party: String?
+   public let partyID: Int?
+   public let position: String?
+   public let positionID: Int?
+   public let picURL: String?
+   public let shortName: String?
 
     enum CodingKeys: String, CodingKey {
         case promiseID = "PROMISE_ID"
