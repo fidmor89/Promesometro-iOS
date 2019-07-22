@@ -13,15 +13,15 @@ internal var baseURL: URL?
 
 internal enum PromesometroRouter: Router {
 
-    // TODO: Define the correct routes
-    case getAlgo
-    case postAlgo(Encodable)
+    // Promise
+    case getPromises
+    case createPromise(Encodable)
 
     // MARK: - HTTPMethod
 
     var method: HTTPMethod {
         switch self {
-        case .postAlgo:
+        case .createPromise:
             return .post
         default:
             return .get
@@ -32,16 +32,16 @@ internal enum PromesometroRouter: Router {
 
     var path: String {
         switch self {
-        case .getAlgo:
-            return "/somewhere"
-        case .postAlgo:
-            return "/shomewhereElse"
+        case .getPromises:
+            return "/promises"
+        case .createPromise:
+            return "/promises"
         }
     }
 
     var parameters: Parameters? {
         switch self {
-        case .postAlgo(let params):
+        case .createPromise(let params):
             return params.asDictionary
         default:
             return nil
