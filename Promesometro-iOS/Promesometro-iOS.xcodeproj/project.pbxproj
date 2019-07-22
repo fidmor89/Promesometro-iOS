@@ -11,6 +11,10 @@
 		558B28D9CC0A63BAEE6DB4B8 /* Pods_PromesometroService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7325176AA9D428954B0194A /* Pods_PromesometroService.framework */; };
 		BA94044122E522C3006E5FCA /* FileManager+Plist.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA94043E22E522B4006E5FCA /* FileManager+Plist.swift */; };
 		BA94044322E52519006E5FCA /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA94044222E52519006E5FCA /* AppConfiguration.swift */; };
+		BA94044D22E52A40006E5FCA /* PromesometroModel.h in Headers */ = {isa = PBXBuildFile; fileRef = BA94044B22E52A40006E5FCA /* PromesometroModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA94045022E52A40006E5FCA /* PromesometroModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA94044922E52A40006E5FCA /* PromesometroModel.framework */; };
+		BA94045122E52A40006E5FCA /* PromesometroModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BA94044922E52A40006E5FCA /* PromesometroModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BA94045622E52A4A006E5FCA /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA94045522E52A4A006E5FCA /* Promise.swift */; };
 		BAC3887B22E51FF600AE5F8F /* app.conf.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAC3887A22E51FF600AE5F8F /* app.conf.plist */; };
 		BAD5A82E22E4F3C40071B0E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD5A82D22E4F3C40071B0E2 /* AppDelegate.swift */; };
 		BAD5A83722E4F3C50071B0E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD5A83622E4F3C50071B0E2 /* Assets.xcassets */; };
@@ -30,6 +34,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		BA94044E22E52A40006E5FCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAD5A82222E4F3C40071B0E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA94044822E52A40006E5FCA;
+			remoteInfo = PromesometroModel;
+		};
+		BA94045722E52AAE006E5FCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAD5A82222E4F3C40071B0E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA94044822E52A40006E5FCA;
+			remoteInfo = PromesometroModel;
+		};
 		BAD5A87822E50AE30071B0E2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BAD5A82222E4F3C40071B0E2 /* Project object */;
@@ -46,6 +64,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				BA94045122E52A40006E5FCA /* PromesometroModel.framework in Embed Frameworks */,
 				BAD5A87B22E50AE30071B0E2 /* PromesometroService.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -64,6 +83,10 @@
 		B9948A417DB62FBC9BCC9628 /* Pods_PromesometroServiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PromesometroServiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA94043E22E522B4006E5FCA /* FileManager+Plist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Plist.swift"; sourceTree = "<group>"; };
 		BA94044222E52519006E5FCA /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		BA94044922E52A40006E5FCA /* PromesometroModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PromesometroModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA94044B22E52A40006E5FCA /* PromesometroModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PromesometroModel.h; sourceTree = "<group>"; };
+		BA94044C22E52A40006E5FCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA94045522E52A4A006E5FCA /* Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
 		BAC3887A22E51FF600AE5F8F /* app.conf.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = app.conf.plist; sourceTree = "<group>"; };
 		BAD5A82A22E4F3C40071B0E2 /* Promesometro-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Promesometro-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD5A82D22E4F3C40071B0E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,11 +113,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BA94044622E52A40006E5FCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAD5A82722E4F3C40071B0E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BAD5A87A22E50AE30071B0E2 /* PromesometroService.framework in Frameworks */,
+				BA94045022E52A40006E5FCA /* PromesometroModel.framework in Frameworks */,
 				152715B799685A4B857C6CF9 /* Pods_Promesometro_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,6 +156,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BA94044A22E52A40006E5FCA /* PromesometroModel */ = {
+			isa = PBXGroup;
+			children = (
+				BA94044B22E52A40006E5FCA /* PromesometroModel.h */,
+				BA94044C22E52A40006E5FCA /* Info.plist */,
+				BA94045522E52A4A006E5FCA /* Promise.swift */,
+			);
+			path = PromesometroModel;
+			sourceTree = "<group>";
+		};
 		BAD5A82122E4F3C40071B0E2 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +173,7 @@
 				BAD5A8A622E5149C0071B0E2 /* Extensions */,
 				BAD5A82C22E4F3C40071B0E2 /* Promesometro-iOS */,
 				BAD5A86622E50AE30071B0E2 /* PromesometroService */,
+				BA94044A22E52A40006E5FCA /* PromesometroModel */,
 				BAD5A82B22E4F3C40071B0E2 /* Products */,
 				0071A9CE951EFB90EC6A324F /* Pods */,
 				E94F0353A55871F12EED5FA9 /* Frameworks */,
@@ -143,6 +185,7 @@
 			children = (
 				BAD5A82A22E4F3C40071B0E2 /* Promesometro-iOS.app */,
 				BAD5A86522E50AE20071B0E2 /* PromesometroService.framework */,
+				BA94044922E52A40006E5FCA /* PromesometroModel.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -264,6 +307,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		BA94044422E52A40006E5FCA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA94044D22E52A40006E5FCA /* PromesometroModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAD5A86022E50AE20071B0E2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,6 +326,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		BA94044822E52A40006E5FCA /* PromesometroModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA94045222E52A40006E5FCA /* Build configuration list for PBXNativeTarget "PromesometroModel" */;
+			buildPhases = (
+				BA94044422E52A40006E5FCA /* Headers */,
+				BA94044522E52A40006E5FCA /* Sources */,
+				BA94044622E52A40006E5FCA /* Frameworks */,
+				BA94044722E52A40006E5FCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PromesometroModel;
+			productName = PromesometroModel;
+			productReference = BA94044922E52A40006E5FCA /* PromesometroModel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		BAD5A82922E4F3C40071B0E2 /* Promesometro-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAD5A84922E4F3C50071B0E2 /* Build configuration list for PBXNativeTarget "Promesometro-iOS" */;
@@ -291,6 +360,7 @@
 			);
 			dependencies = (
 				BAD5A87922E50AE30071B0E2 /* PBXTargetDependency */,
+				BA94044F22E52A40006E5FCA /* PBXTargetDependency */,
 			);
 			name = "Promesometro-iOS";
 			productName = "Promesometro-iOS";
@@ -310,6 +380,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BA94045822E52AAE006E5FCA /* PBXTargetDependency */,
 			);
 			name = PromesometroService;
 			productName = PromesometroService;
@@ -326,6 +397,10 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Fidmor.89;
 				TargetAttributes = {
+					BA94044822E52A40006E5FCA = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
 					BAD5A82922E4F3C40071B0E2 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
@@ -350,11 +425,19 @@
 			targets = (
 				BAD5A82922E4F3C40071B0E2 /* Promesometro-iOS */,
 				BAD5A86422E50AE20071B0E2 /* PromesometroService */,
+				BA94044822E52A40006E5FCA /* PromesometroModel */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BA94044722E52A40006E5FCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAD5A82822E4F3C40071B0E2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -458,6 +541,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BA94044522E52A40006E5FCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA94045622E52A4A006E5FCA /* Promise.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BAD5A82622E4F3C40071B0E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -486,6 +577,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		BA94044F22E52A40006E5FCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA94044822E52A40006E5FCA /* PromesometroModel */;
+			targetProxy = BA94044E22E52A40006E5FCA /* PBXContainerItemProxy */;
+		};
+		BA94045822E52AAE006E5FCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA94044822E52A40006E5FCA /* PromesometroModel */;
+			targetProxy = BA94045722E52AAE006E5FCA /* PBXContainerItemProxy */;
+		};
 		BAD5A87922E50AE30071B0E2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BAD5A86422E50AE20071B0E2 /* PromesometroService */;
@@ -505,6 +606,65 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BA94045322E52A40006E5FCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X47R535F45;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PromesometroModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.89.fidmor.PromesometroModel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BA94045422E52A40006E5FCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X47R535F45;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PromesometroModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.89.fidmor.PromesometroModel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		BAD5A84722E4F3C50071B0E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -727,6 +887,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BA94045222E52A40006E5FCA /* Build configuration list for PBXNativeTarget "PromesometroModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA94045322E52A40006E5FCA /* Debug */,
+				BA94045422E52A40006E5FCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BAD5A82522E4F3C40071B0E2 /* Build configuration list for PBXProject "Promesometro-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
