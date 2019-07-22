@@ -44,6 +44,11 @@ class PromiseTableViewController: UITableViewController {
         cell.textLabel?.text = promise.promise
         return cell
     }
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let promise = viewModel.promises[indexPath.row]
+        print("Selected promise: \(promise)")
+    }
 }
 
 // MARK: - Helpers

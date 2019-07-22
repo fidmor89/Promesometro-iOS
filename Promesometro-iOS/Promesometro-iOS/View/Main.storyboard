@@ -40,10 +40,28 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="5hi-7n-D1g" kind="show" identifier="promiseDetail" id="ypg-DE-7zL"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aID-of-Bqe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1747.826086956522" y="0.6696428571428571"/>
+        </scene>
+        <!--Promesa-->
+        <scene sceneID="Lzv-Qr-riD">
+            <objects>
+                <viewController title="Promesa" id="5hi-7n-D1g" customClass="PromiseDetailViewController" customModule="Promesometro_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ALc-bG-2Dz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="sbe-Af-BbW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iHv-bZ-dKZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2519" y="330"/>
         </scene>
         <!--Nueva Promesa-->
         <scene sceneID="Fo7-Eh-lZx">
@@ -58,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zB0-8p-8KF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2513" y="-544"/>
+            <point key="canvasLocation" x="2519" y="-328"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="UBm-pd-KL4">
