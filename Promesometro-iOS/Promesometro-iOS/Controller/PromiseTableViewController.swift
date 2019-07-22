@@ -6,6 +6,7 @@
 //  Copyright © 2019 Fidmor.89. All rights reserved.
 //
 
+import PromesometroModel
 import RxSwift
 import UIKit
 
@@ -48,6 +49,19 @@ class PromiseTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let promise = viewModel.promises[indexPath.row]
         print("Selected promise: \(promise)")
+        performSegue(withIdentifier: "promiseDetail", sender: promise)
+    }
+}
+
+// MARK: - Navigation
+extension PromiseTableViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard
+            let destination = segue.destination as? PromiseDetailViewController,
+            let promise = sender as? Promise else {
+                return
+        }
+        destination.viewModel = PromiseDetailViewModel(promise: promise)
     }
 }
 
