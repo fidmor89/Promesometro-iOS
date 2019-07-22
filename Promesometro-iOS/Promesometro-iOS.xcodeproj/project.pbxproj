@@ -20,6 +20,10 @@
 		BA94045F22E54D96006E5FCA /* PromiseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA94045E22E54D96006E5FCA /* PromiseDetailViewController.swift */; };
 		BA94046122E54EA2006E5FCA /* PromiseDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA94046022E54EA2006E5FCA /* PromiseDetailViewModel.swift */; };
 		BA94046222E550D5006E5FCA /* Encodable+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD5A8A422E514780071B0E2 /* Encodable+JSON.swift */; };
+		BA94046F22E56224006E5FCA /* Promises.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA94046E22E56224006E5FCA /* Promises.storyboard */; };
+		BA94047122E5625A006E5FCA /* Parties.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA94047022E5625A006E5FCA /* Parties.storyboard */; };
+		BA94047322E5631D006E5FCA /* PartiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA94047222E5631D006E5FCA /* PartiesTableViewController.swift */; };
+		BA94047522E56338006E5FCA /* PartiesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA94047422E56338006E5FCA /* PartiesTableViewModel.swift */; };
 		BAC3887B22E51FF600AE5F8F /* app.conf.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAC3887A22E51FF600AE5F8F /* app.conf.plist */; };
 		BAD5A82E22E4F3C40071B0E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD5A82D22E4F3C40071B0E2 /* AppDelegate.swift */; };
 		BAD5A83722E4F3C50071B0E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD5A83622E4F3C50071B0E2 /* Assets.xcassets */; };
@@ -96,6 +100,10 @@
 		BA94045C22E54CB0006E5FCA /* CreatePromiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePromiseViewController.swift; sourceTree = "<group>"; };
 		BA94045E22E54D96006E5FCA /* PromiseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseDetailViewController.swift; sourceTree = "<group>"; };
 		BA94046022E54EA2006E5FCA /* PromiseDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseDetailViewModel.swift; sourceTree = "<group>"; };
+		BA94046E22E56224006E5FCA /* Promises.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Promises.storyboard; sourceTree = "<group>"; };
+		BA94047022E5625A006E5FCA /* Parties.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Parties.storyboard; sourceTree = "<group>"; };
+		BA94047222E5631D006E5FCA /* PartiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartiesTableViewController.swift; sourceTree = "<group>"; };
+		BA94047422E56338006E5FCA /* PartiesTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartiesTableViewModel.swift; sourceTree = "<group>"; };
 		BAC3887A22E51FF600AE5F8F /* app.conf.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = app.conf.plist; sourceTree = "<group>"; };
 		BAD5A82A22E4F3C40071B0E2 /* Promesometro-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Promesometro-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD5A82D22E4F3C40071B0E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,7 +111,7 @@
 		BAD5A83922E4F3C50071B0E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAD5A83B22E4F3C50071B0E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAD5A85422E4FAD10071B0E2 /* PromiseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseTableViewController.swift; sourceTree = "<group>"; };
-		BAD5A85622E4FE750071B0E2 /* PromiseTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PromiseTableViewModel.swift; path = "Promesometro-iOS/ViewModel/PromiseTableViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		BAD5A85622E4FE750071B0E2 /* PromiseTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PromiseTableViewModel.swift; path = "Promesometro-iOS/ViewModel/Promise/PromiseTableViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		BAD5A85B22E5023D0071B0E2 /* SwiftLint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = SwiftLint.sh; sourceTree = "<group>"; };
 		BAD5A85D22E505FA0071B0E2 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BAD5A86522E50AE20071B0E2 /* PromesometroService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PromesometroService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +191,41 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		BA94047622E56357006E5FCA /* Promise */ = {
+			isa = PBXGroup;
+			children = (
+				BA94045C22E54CB0006E5FCA /* CreatePromiseViewController.swift */,
+				BA94045E22E54D96006E5FCA /* PromiseDetailViewController.swift */,
+				BAD5A85422E4FAD10071B0E2 /* PromiseTableViewController.swift */,
+			);
+			path = Promise;
+			sourceTree = "<group>";
+		};
+		BA94047722E56360006E5FCA /* Party */ = {
+			isa = PBXGroup;
+			children = (
+				BA94047222E5631D006E5FCA /* PartiesTableViewController.swift */,
+			);
+			path = Party;
+			sourceTree = "<group>";
+		};
+		BA94047822E5638D006E5FCA /* Promise */ = {
+			isa = PBXGroup;
+			children = (
+				BAD5A85622E4FE750071B0E2 /* PromiseTableViewModel.swift */,
+				BA94046022E54EA2006E5FCA /* PromiseDetailViewModel.swift */,
+			);
+			path = Promise;
+			sourceTree = "<group>";
+		};
+		BA94047922E563D6006E5FCA /* Party */ = {
+			isa = PBXGroup;
+			children = (
+				BA94047422E56338006E5FCA /* PartiesTableViewModel.swift */,
+			);
+			path = Party;
+			sourceTree = "<group>";
+		};
 		BAD5A82122E4F3C40071B0E2 = {
 			isa = PBXGroup;
 			children = (
@@ -222,9 +265,8 @@
 		BAD5A84F22E4F4C20071B0E2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BAD5A85422E4FAD10071B0E2 /* PromiseTableViewController.swift */,
-				BA94045C22E54CB0006E5FCA /* CreatePromiseViewController.swift */,
-				BA94045E22E54D96006E5FCA /* PromiseDetailViewController.swift */,
+				BA94047622E56357006E5FCA /* Promise */,
+				BA94047722E56360006E5FCA /* Party */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -234,6 +276,8 @@
 			children = (
 				BAD5A83822E4F3C50071B0E2 /* LaunchScreen.storyboard */,
 				BAD5A85D22E505FA0071B0E2 /* Main.storyboard */,
+				BA94047022E5625A006E5FCA /* Parties.storyboard */,
+				BA94046E22E56224006E5FCA /* Promises.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -253,8 +297,8 @@
 		BAD5A85322E4F51B0071B0E2 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				BAD5A85622E4FE750071B0E2 /* PromiseTableViewModel.swift */,
-				BA94046022E54EA2006E5FCA /* PromiseDetailViewModel.swift */,
+				BA94047822E5638D006E5FCA /* Promise */,
+				BA94047922E563D6006E5FCA /* Party */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -455,10 +499,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA94046F22E56224006E5FCA /* Promises.storyboard in Resources */,
 				BAD5A83A22E4F3C50071B0E2 /* LaunchScreen.storyboard in Resources */,
 				BAC3887B22E51FF600AE5F8F /* app.conf.plist in Resources */,
 				BAD5A83722E4F3C50071B0E2 /* Assets.xcassets in Resources */,
 				BAD5A85E22E505FA0071B0E2 /* Main.storyboard in Resources */,
+				BA94047122E5625A006E5FCA /* Parties.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,7 +617,9 @@
 				BAD5A85522E4FAD10071B0E2 /* PromiseTableViewController.swift in Sources */,
 				BA94044122E522C3006E5FCA /* FileManager+Plist.swift in Sources */,
 				BAD5A85722E4FE750071B0E2 /* PromiseTableViewModel.swift in Sources */,
+				BA94047522E56338006E5FCA /* PartiesTableViewModel.swift in Sources */,
 				BA94046222E550D5006E5FCA /* Encodable+JSON.swift in Sources */,
+				BA94047322E5631D006E5FCA /* PartiesTableViewController.swift in Sources */,
 				BAD5A8A922E51A5E0071B0E2 /* Dependencies.swift in Sources */,
 				BAD5A82E22E4F3C40071B0E2 /* AppDelegate.swift in Sources */,
 				BA94045D22E54CB0006E5FCA /* CreatePromiseViewController.swift in Sources */,

@@ -8,6 +8,10 @@ def app_pods
   pod 'RxCocoa'
 end
 
+def ui_pods
+  pod 'RAMAnimatedTabBarController'
+end
+
 def web_service_pods
   pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git', :branch => 'alamofire5'
 end
@@ -18,6 +22,7 @@ end
 
 target 'Promesometro-iOS' do
   app_pods
+  ui_pods
   shared_pods
   #  target 'Promesometro-iOSTests' do
   #    inherit! :search_paths

@@ -69,6 +69,7 @@ extension PromiseTableViewController {
 extension PromiseTableViewController {
     private func setupNavigationController() {
         self.title = "Promesas"
+        self.tabBarController?.tabBar.items?.first?.title = ""  // This avoids a shadow.
 
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.navigationItem.largeTitleDisplayMode = .never
