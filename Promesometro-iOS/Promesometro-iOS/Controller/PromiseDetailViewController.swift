@@ -12,6 +12,8 @@ class PromiseDetailViewController: UIViewController {
 
     var viewModel: PromiseDetailViewModel!
 
+    @IBOutlet weak var textView: UITextView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,5 +21,8 @@ class PromiseDetailViewController: UIViewController {
             // TODO: Show an error to the user
             return dismiss(animated: true)
         }
+
+        textView.text = viewModel.promise.asPrettyJSON()
+
     }
 }

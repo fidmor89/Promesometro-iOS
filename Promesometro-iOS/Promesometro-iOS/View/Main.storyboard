@@ -55,13 +55,31 @@
                     <view key="view" contentMode="scaleToFill" id="ALc-bG-2Dz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="biH-2J-6dk">
+                                <rect key="frame" x="8" y="96" width="398" height="709"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sbe-Af-BbW" firstAttribute="trailing" secondItem="biH-2J-6dk" secondAttribute="trailing" constant="8" id="0hb-ud-oak"/>
+                            <constraint firstItem="sbe-Af-BbW" firstAttribute="bottom" secondItem="biH-2J-6dk" secondAttribute="bottom" constant="8" id="OX9-zn-lri"/>
+                            <constraint firstItem="biH-2J-6dk" firstAttribute="leading" secondItem="sbe-Af-BbW" secondAttribute="leading" constant="8" id="PpB-AE-dcZ"/>
+                            <constraint firstItem="biH-2J-6dk" firstAttribute="top" secondItem="sbe-Af-BbW" secondAttribute="top" constant="8" id="fWq-eT-pTN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sbe-Af-BbW"/>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="biH-2J-6dk" id="Qcc-Zg-FjK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iHv-bZ-dKZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2519" y="330"/>
+            <point key="canvasLocation" x="2518.840579710145" y="329.46428571428572"/>
         </scene>
         <!--Nueva Promesa-->
         <scene sceneID="Fo7-Eh-lZx">
