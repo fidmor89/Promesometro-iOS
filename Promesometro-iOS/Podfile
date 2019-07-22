@@ -4,6 +4,8 @@ inhibit_all_warnings!
 
 def app_pods
   pod 'SwiftLint'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 end
 
 def web_service_pods

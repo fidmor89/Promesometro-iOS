@@ -204,7 +204,6 @@
 			isa = PBXGroup;
 			children = (
 				BAD5A83622E4F3C50071B0E2 /* Assets.xcassets */,
-				BAD5A85022E4F4D00071B0E2 /* Model */,
 				BAD5A84F22E4F4C20071B0E2 /* Controller */,
 				BAD5A85322E4F51B0071B0E2 /* ViewModel */,
 				BAD5A85122E4F4D60071B0E2 /* View */,
@@ -219,13 +218,6 @@
 				BAD5A85422E4FAD10071B0E2 /* PromiseTableViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		BAD5A85022E4F4D00071B0E2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		BAD5A85122E4F4D60071B0E2 /* View */ = {
