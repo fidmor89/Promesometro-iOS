@@ -10,7 +10,7 @@
 	<key>debug</key>
 	<dict>
 		<key>baseURL</key>
-		<string>https://www.google.com/</string>
+		<string>https://uhwvsjvsme.execute-api.us-east-1.amazonaws.com/dev</string>
 	</dict>
 </dict>
 </plist>
