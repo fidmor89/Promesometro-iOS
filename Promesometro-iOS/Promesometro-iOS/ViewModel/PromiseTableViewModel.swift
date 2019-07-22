@@ -22,6 +22,7 @@ class PromiseTableViewModel {
 
     // MARK: - Actions
 
+    @discardableResult
     func getPromises() -> BehaviorRelay<Promises> {
         webService
             .getPromises()

@@ -77,12 +77,23 @@ extension PromiseTableViewController {
     private func setupTableView() {
         // Register cell.
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
+
+        self.refreshControl = UIRefreshControl()
+        refreshControl?.addTarget(self, action: #selector(refresh), for: .valueChanged)
+    }
+
+    @objc
+    private func refresh() {
+        self.viewModel.getPromises()
     }
 
     private func setupRx() {
         viewModel
             .getPromises()
-            .bind (onNext: { [weak self] _ in self?.tableView.reloadData() })
+            .bind (onNext: { [weak self] _ in
+                self?.tableView.reloadData()
+                self?.refreshControl?.endRefreshing()
+            })
             .disposed(by: disposeBag)
     }
 }
