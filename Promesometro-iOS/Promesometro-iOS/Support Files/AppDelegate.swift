@@ -6,6 +6,7 @@
 //  Copyright © 2019 Fidmor.89. All rights reserved.
 //
 
+import PromesometroService
 import UIKit
 
 @UIApplicationMain
@@ -16,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // swiftlint:disable:previous discouraged_optional_collection
+
+        webServiceSetup()
         return true
     }
 
@@ -32,5 +35,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
+    }
+}
+
+// MARK: - Helpers
+extension AppDelegate {
+    func webServiceSetup() {
+        guard
+            let uri: String = AppConfiguration.baseURL.read(),
+            let url = URL(string: uri) else {
+                fatalError("Missing base url")
+        }
+        webService = PromesometroService(withURL: url)
     }
 }

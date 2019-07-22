@@ -1,5 +1,0 @@
-# Rule customization for Tests
-
-disabled_rules:
-- overridden_super_call
-- force_unwrapping

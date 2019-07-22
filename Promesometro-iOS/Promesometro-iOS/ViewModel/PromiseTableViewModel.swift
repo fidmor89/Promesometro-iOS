@@ -7,15 +7,30 @@
 //
 
 import Foundation
+import PromesometroModel
+import RxCocoa
 
-struct PromiseTableViewModel {
+class PromiseTableViewModel {
 
-    // TODO: Fix dummy data
-    var promises: [String] = [
-        "Promise 1",
-        "Promise 2",
-        "Promise 3",
-        "Promise 4",
-        "Promise 5"
-    ]
+    // MARK: - Properties
+
+    var error: BehaviorRelay<Error?> = BehaviorRelay(value: nil)
+    private var promisesRelay: BehaviorRelay<Promises> = BehaviorRelay(value: [])
+    var promises: Promises {
+        return promisesRelay.value
+    }
+
+    // MARK: - Actions
+
+    func getPromises() -> BehaviorRelay<Promises> {
+        webService
+            .getPromises()
+            .execute(onSuccess: { response in
+                self.promisesRelay.accept(response)
+                self.error.accept(nil)
+            }, onFailure: { error in
+                self.error.accept(error)
+            })
+        return promisesRelay
+    }
 }
