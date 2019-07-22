@@ -18,6 +18,7 @@
 		BA94045A22E53DB2006E5FCA /* PromesometroService+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA94045922E53DB2006E5FCA /* PromesometroService+Promise.swift */; };
 		BA94045D22E54CB0006E5FCA /* CreatePromiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA94045C22E54CB0006E5FCA /* CreatePromiseViewController.swift */; };
 		BA94045F22E54D96006E5FCA /* PromiseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA94045E22E54D96006E5FCA /* PromiseDetailViewController.swift */; };
+		BA94046122E54EA2006E5FCA /* PromiseDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA94046022E54EA2006E5FCA /* PromiseDetailViewModel.swift */; };
 		BAC3887B22E51FF600AE5F8F /* app.conf.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAC3887A22E51FF600AE5F8F /* app.conf.plist */; };
 		BAD5A82E22E4F3C40071B0E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD5A82D22E4F3C40071B0E2 /* AppDelegate.swift */; };
 		BAD5A83722E4F3C50071B0E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD5A83622E4F3C50071B0E2 /* Assets.xcassets */; };
@@ -93,6 +94,7 @@
 		BA94045922E53DB2006E5FCA /* PromesometroService+Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PromesometroService+Promise.swift"; sourceTree = "<group>"; };
 		BA94045C22E54CB0006E5FCA /* CreatePromiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePromiseViewController.swift; sourceTree = "<group>"; };
 		BA94045E22E54D96006E5FCA /* PromiseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseDetailViewController.swift; sourceTree = "<group>"; };
+		BA94046022E54EA2006E5FCA /* PromiseDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromiseDetailViewModel.swift; sourceTree = "<group>"; };
 		BAC3887A22E51FF600AE5F8F /* app.conf.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = app.conf.plist; sourceTree = "<group>"; };
 		BAD5A82A22E4F3C40071B0E2 /* Promesometro-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Promesometro-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD5A82D22E4F3C40071B0E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				BAD5A85622E4FE750071B0E2 /* PromiseTableViewModel.swift */,
+				BA94046022E54EA2006E5FCA /* PromiseDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -562,6 +565,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA94046122E54EA2006E5FCA /* PromiseDetailViewModel.swift in Sources */,
 				BA94044322E52519006E5FCA /* AppConfiguration.swift in Sources */,
 				BAD5A85522E4FAD10071B0E2 /* PromiseTableViewController.swift in Sources */,
 				BA94044122E522C3006E5FCA /* FileManager+Plist.swift in Sources */,
