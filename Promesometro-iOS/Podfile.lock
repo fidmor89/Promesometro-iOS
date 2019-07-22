@@ -1,6 +1,7 @@
 PODS:
   - Alamofire (5.0.0.beta.1)
   - PromisedFuture (1.0.1)
+  - RAMAnimatedTabBarController (5.0.1)
   - RxCocoa (5.0.0):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -12,6 +13,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, branch `alamofire5`)
   - PromisedFuture
+  - RAMAnimatedTabBarController
   - RxCocoa
   - RxSwift
   - SwiftLint
@@ -19,6 +21,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - PromisedFuture
+    - RAMAnimatedTabBarController
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -37,11 +40,12 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: 2ef6d6c984c5d21c366e9b41a9ae7dfee2b67a44
   PromisedFuture: 3f863d17c047c3474c85045b254bb1c94743ed0f
+  RAMAnimatedTabBarController: ec36fba2fa4679fd36db55098e3477fe9bd79f52
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
   SwiftLint: 9fc1143bbacec37f94994a7d0d2a85b2154b6294
 
-PODFILE CHECKSUM: 930c4aa6a8e9d19033ad32399990ce651dbba9d0
+PODFILE CHECKSUM: 955e03e23192344ef2d73c3896f6d1423bde7a51
 
 COCOAPODS: 1.7.4
