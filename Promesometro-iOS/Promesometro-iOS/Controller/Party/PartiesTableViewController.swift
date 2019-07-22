@@ -13,6 +13,11 @@ class PartiesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "Partidos"
+        if let selectedIndex = self.tabBarController?.selectedIndex {
+            let item = self.tabBarController?.tabBar.items?[selectedIndex]
+            item?.title = ""
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
